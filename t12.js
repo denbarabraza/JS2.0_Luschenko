@@ -7,7 +7,7 @@ let out1 = document.querySelector(".out-1");
 
 function f1() {
 	out1.style.width = "200px";
-	out1.style.height = "90px";	
+	out1.style.height = "90px";
 }
 
 document.querySelector(".b-1 ").onclick = f1
@@ -36,3 +36,16 @@ function f3() {
 }
 
 document.querySelector(".b-3 ").onclick = f3
+
+// Task4
+// Стоимсоть бензина зная кол-во литров
+
+let gas = document.querySelectorAll(".gas");
+for (let i = 0; i < gas.length; i++) {
+	gas[i].onclick = function () {
+		let price = this.getAttribute('data');
+		let gallons = document.querySelector('.gallons').value;
+		console.log( gallons*price);
+	}
+}
+
