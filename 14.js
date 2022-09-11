@@ -31,3 +31,9 @@ else{
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+function checkObj(obj, checkProp) {
+	// Only change code below this line
+	return obj.hasOwnProperty(checkProp) ? obj[checkProp] : "Not Found"
+	// Only change code above this line
+ }
