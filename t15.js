@@ -67,9 +67,9 @@ console.log(arr7[arr7.length - 1]);
 let input = document.querySelector('.i-8');
 
 let d8 = [33, 'best', 66, 'best'];
-let out8='';
 
 document.querySelector('.b-8').onclick = function f1() {
+	let out8='';
 	d8.push(input.value);
 	for (let i = 0; i < d8.length; i++) {
 		out8 +=d8[i] + '_ _'
