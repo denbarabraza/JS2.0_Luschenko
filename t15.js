@@ -59,4 +59,22 @@ for (let i = 0; i < arr7.length; i++) {
 document.querySelector('.out-7').innerHTML = out7 + "<br>" + "Длина: " + arr7.length;
 
 console.log(arr7);
-console.log(arr7[arr7.length-1]);
+console.log(arr7[arr7.length - 1]);
+
+// Task8
+//Есть массив d8, кнопка b-8, input i-8. Напишите функцию f8, которая при нажатии читает i-8 и добавляем его в массив. После чего выводит массив в .out-8.
+
+let input = document.querySelector('.i-8');
+
+let d8 = [33, 'best', 66, 'best'];
+let out8='';
+
+document.querySelector('.b-8').onclick = function f1() {
+	d8.push(input.value);
+	for (let i = 0; i < d8.length; i++) {
+		out8 +=d8[i] + '_ _'
+	}
+	document.querySelector('.out-8').innerHTML = out8;
+	console.log(d8);
+}
+
