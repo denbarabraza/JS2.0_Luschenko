@@ -95,3 +95,24 @@ document.querySelector('.b-9').onclick = () => {
 	document.querySelector('.out-9').innerHTML = d9;
 }
 
+// Task10
+//Вывести значения двумерного массива в out.
+
+let a10 = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
+	[10, 11, 12],
+];
+
+let out10 = " ";
+
+for (let i = 0; i < a10.length; i++) {
+	for (let j = 0; j < a10[i].length; j++) {
+		out10 += a10[i][j] + ' ';
+	}
+	out10 += '<br>';
+}
+
+document.querySelector('.out-10').innerHTML = out10;
+console.log(out10);
