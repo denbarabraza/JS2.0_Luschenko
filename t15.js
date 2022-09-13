@@ -116,3 +116,26 @@ for (let i = 0; i < a10.length; i++) {
 
 document.querySelector('.out-10').innerHTML = out10;
 console.log(out10);
+
+// Task11
+//Вывести значения двумерного массива в out.
+
+let str = '';
+let a11 = 5;
+let a12 = 8;
+
+for (i = 0; i < 8; i++) {
+	for (k = 0; k < 16; k++) {
+		if (k < a11 || k > a12) {
+			str += '&nbsp'
+		}
+		else {
+			str += ' * ';
+		}
+	}
+	a11--;
+	a12--;
+	str += '<br>';
+}
+
+document.querySelector('.out-11').innerHTML = str;
