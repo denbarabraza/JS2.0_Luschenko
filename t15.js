@@ -67,14 +67,31 @@ console.log(arr7[arr7.length - 1]);
 let input = document.querySelector('.i-8');
 
 let d8 = [33, 'best', 66, 'best'];
+document.querySelector('.out-8').innerHTML = d8;
 
 document.querySelector('.b-8').onclick = function f1() {
-	let out8='';
+	let out8 = '';
 	d8.push(input.value);
 	for (let i = 0; i < d8.length; i++) {
-		out8 +=d8[i] + '_ _'
+		out8 += d8[i] + '_ _'
 	}
 	document.querySelector('.out-8').innerHTML = out8;
 	console.log(d8);
+}
+
+// Task9
+//При нажатии на кнопку передвинать 1 в  массиве
+
+let d9 = [1, 0, 0, 0, 0, 0]
+document.querySelector('.out-9').innerHTML = d9;
+let k9 = 0;
+
+document.querySelector('.b-9').onclick = () => {
+	if (k9 + 1 < 6) {
+		d9[k9] = 0;
+		d9[k9 + 1] = 1;
+		k9++;
+	}
+	document.querySelector('.out-9').innerHTML = d9;
 }
 
