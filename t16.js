@@ -10,15 +10,13 @@ let a1 = {
 let out = document.querySelector('.out-1');
 let out1 = ' ';
 
-function f1() {
+document.querySelector('.b-1').onclick = () => {
 	for (let key in a1) {
-		out1 = a1['one'] + '_';
+		out1 += a1[key] + '_';
 	}
 	out.innerHTML = out1;
 }
 console.log( a1 );
-
-document.querySelector('.b-1').onclick = f1;
 
 
 
