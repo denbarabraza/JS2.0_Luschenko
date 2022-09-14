@@ -15,8 +15,8 @@ function f1() {
 		out1 = a1['one'] + '_';
 	}
 	out.innerHTML = out1;
-	// console.log(a1[key]);
 }
+console.log( a1 );
 
 document.querySelector('.b-1').onclick = f1;
 
