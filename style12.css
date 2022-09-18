@@ -27,3 +27,14 @@ div{
 .out-8{
 	background-color:rgb(103, 111, 63);
 }
+
+
+.content{
+	display: flex;
+	justify-content: center;
+}
+
+.in18 {
+	background-color: aqua;  
+}
+
