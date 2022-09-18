@@ -29,12 +29,11 @@ div{
 }
 
 
-.content{
-	display: flex;
-	justify-content: center;
-}
-
 .in18 {
 	background-color: aqua;  
 }
 
+.div-3 {
+	width: 120px;
+	border: 5px solid red;
+}
